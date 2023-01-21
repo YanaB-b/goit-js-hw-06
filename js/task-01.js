@@ -15,6 +15,7 @@
 
 // Category: Technologies
 // Elements: 5
+
 const navEl = document.querySelectorAll('.item');
 console.log(`Number of categories:${navEl.length}`);
 
