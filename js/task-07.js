@@ -9,11 +9,11 @@ const spanText = document.querySelector('#text');
 console.log(inputFontSizeControl);
 console.log(spanText);
 
-inputFontSizeControl.addEventListener('change',onInputFontSize);
-
-
-function onInputFontSize(e) {
+inputFontSizeControl.oninput = function()
+ {
+    console.log (this.value)
     inputFontSizeControl.range = e.currentTarget.value;
-    spanText.style.fontSize = `${e.target.value}px`
-    console.log (spanText.textContent);
+    spanText.style.fontSize = nputFontSizeControl.value + 'px';
+    
+   
 }

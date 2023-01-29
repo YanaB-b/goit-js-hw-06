@@ -22,11 +22,11 @@
 //   border-color: #f44336;
 // }
 
-const input = document.querySelector('#valid-input');
-const inputLength = Number(input.dataset.length);
+const input = document.querySelector('#validation-input');
+
 
 input.addEventListener ('blur', (e) => {
-    if (e.currentTarget.value.length === inputLength ){
+    if (e.currentTarget.value.length === input.dataset.length){
         input.classList.add('valid');
         input.classList.remove('invalid');
     }
@@ -35,4 +35,4 @@ input.addEventListener ('blur', (e) => {
         input.classList.remove("valid");
     }
   
-})
+});

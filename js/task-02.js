@@ -18,8 +18,8 @@ const listEl = document.querySelector('#ingredients');
 
 const navItems = ingredients.map(ingredient => {
   const listItem = document.createElement('li');
-  listItem.classList.add('item');
-  listItem.textContent = ingredients;
+  listItem.classList.add('.item');
+  listItem.textContent = ingredient;
   return listItem;
 });
 
